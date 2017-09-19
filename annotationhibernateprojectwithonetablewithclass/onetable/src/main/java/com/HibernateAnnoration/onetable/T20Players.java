@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TWO_WHEELER")
 @DiscriminatorValue(value="T20players")
 public class T20Players extends Cricketers{
 
