@@ -13,7 +13,5 @@
 <property name="hbm2ddl.auto">update</property>
 <mapping class="com.HibernateAnnoration.onetable.Cricketers" />
 <mapping class="com.HibernateAnnoration.onetable.T20Players" />
-<!-- </mapping>
-</mapping> -->
 </session-factory>
 </hibernate-configuration>
