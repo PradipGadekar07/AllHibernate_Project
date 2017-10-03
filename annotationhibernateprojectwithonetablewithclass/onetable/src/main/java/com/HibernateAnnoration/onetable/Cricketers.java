@@ -53,5 +53,4 @@ public class Cricketers {
 	public void setJerseyno(int jerseyno) {
 		this.jerseyno = jerseyno;
 	}
-	
 }

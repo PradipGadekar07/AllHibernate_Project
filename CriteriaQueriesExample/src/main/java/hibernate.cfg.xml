@@ -11,7 +11,6 @@
 <property name="connection.password"></property>
 <property name="show_sql">true</property>
 <property name="hbm2ddl.auto">create-drop</property>
-<mapping class="com.HibernateAnnoration.onetable.Cricketers" />
-<mapping class="com.HibernateAnnoration.onetable.T20Players" />
+<mapping class="com.HibernateCriteria.CriteriaQueriesExample.Employee" />
 </session-factory>
 </hibernate-configuration>

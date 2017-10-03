@@ -6,10 +6,12 @@ import java.util.List;
 
 import javax.persistence.Query;
 
+import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.hibernate.SharedSessionContract;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.criterion.Restrictions;
 import org.hsqldb.Session;
 
 /**
@@ -31,7 +33,10 @@ public class MainNativeSQL {
 		    wr.setName("Pradip");
 		    wr.setSalary(4845.54565);
 		    session.save(wr);
-		   
+		    /*session.createCriteria(Worker.class);
+		    Criteria cr = session.createCriteria(Worker.class);
+		    cr.add(Restrictions.eq("salary", 2000));
+		    List results = cr.list();*/
 		    org.hibernate.Query query =session.getNamedQuery("workerbyname");  
 		    ((org.hibernate.Query) query).setString("name", "Pradip");  
 		          
@@ -44,7 +49,6 @@ public class MainNativeSQL {
 		    
 		    tx.commit();
 		    session.close();
-		    
 		     }   
 	}
 
